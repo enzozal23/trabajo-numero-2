@@ -1,0 +1,419 @@
+/*hoja de estilo para smartphone*/
+
+
+
+/*modificaciones a nav de bootstrap*/
+.nav-color{
+  font-family: lato ligh 300;
+  background-color: rgb(248, 247, 247);
+}
+
+.nav-color:hover{
+  background-color: rgba(0, 0, 0, 0.377);
+  
+  .logo-font{
+    color:red;
+  }
+  .pages-list a {
+    color: aliceblue;
+  }
+}
+
+.pages-list a{
+  color: black;
+}
+
+.pages-list a:hover{
+  color: #444;
+  ;
+}
+
+
+
+/*modificaciones al logo*/
+.logo-font{
+  color: black;
+  padding-left: 8rem;
+  font-family: lato light 300;
+}
+
+/*main*/
+
+main{
+  display: flex;
+
+}
+.grid  div img,video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.titulo-principal{
+ display: none;
+}
+.home{
+  margin-top: 30px;
+}
+
+.contenedor{
+  padding: 10px;
+  
+}
+.titulo-secundario h2{
+  display: flex;
+  font-size: 50px;
+  padding-left: 5rem;
+  font-family: raleway;
+}
+
+.contenedor2 div video{
+  padding: 20px;
+}
+
+
+/*boton de comprar*/
+.boton{
+  background-color: transparent;
+}
+ .boton button {
+  position:sticky;
+  top: 200px;
+  left: 200px;
+  width:100px;
+  height: 50px;
+  background-color: black;
+  border: solid 1px black;
+}
+
+.boton button a{
+  color:#444;
+  text-decoration: none;
+  font-family: raleway;
+  
+}
+.boton button:hover {
+  
+  background-color: transparent;
+
+ .boton .boton-comprar a{
+  color: black;
+ }
+}
+
+
+/*estilos y maquetado de footer*/
+
+footer{
+  font-family: lato;
+  text-align: center;
+  
+}
+
+footer h2{
+  justify-content: center;
+  margin: 20px;
+  font-family: lato;
+}
+
+
+.redes{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+
+  
+
+.wpp img{
+  width: 50px;
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 900;
+}
+/*-----------fin index.html---------------*/
+.contenedorfw{
+  display: flex;
+  flex-direction: column;
+  
+}
+.ventas{
+  margin: 10px;
+}
+.ventas div a {
+  
+  font-family: raleway;
+  border: solid 2px black;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  padding: 5px;
+  
+}
+/*encontranos style aca era encontranos y me di cuenta a lo ultimo*/
+
+.contenedor-nosotros{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .2fr 1fr .2fr;
+}
+.contenedor-nosotros__ubic{
+  font-family:raleway ;
+  margin-top: 100px;
+  
+}
+.contenedor-nosotros__datos{
+  font-family: raleway;
+}
+.contenedor-nosotros__horario{
+  font-family: raleway;
+}
+/*nosotros style*/
+.nos-contenedor {
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+  
+}
+
+.nos-contenedor__qs{
+  display: flex;
+  position: absolute;
+  font-family: raleway ;
+  font-size: 50px;
+  top: 100px;
+}
+
+.nos-contenedor__transparencia{
+  background-color: black;
+  position: absolute;
+  top: 200px;
+}
+.nos-contenedor__transparencia .nos-contenedor__text{
+  color: white;
+  font-size: 20px;
+  font-family: lato;
+}
+  
+
+
+
+
+@media screen and (min-width:1024px){
+  
+
+  main{
+    display: flex;
+  
+}
+.nav-color{
+  background-color: #faf8f8;
+}
+.logo-font{
+  color: black;
+  padding-left: 1rem;
+  font-family: lato light 300;
+}
+.nav-color:hover{
+  .logo-font{
+    font-size: 50px!important;
+  }
+  
+}
+
+.grid{
+  
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "img img"
+    "txt txt"
+    "vid vid";
+}
+ main .titulo-principal{
+  color:white;
+  font-family: raleway;
+  font-size: 80px;
+  display: flex;
+  position: absolute;
+  left:25%;
+  top: 50%;
+ 
+}
+
+.contenedor{
+  display: flex;
+  grid-area: img;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.home {
+  display: flex;
+  border-radius: .5rem;
+}
+
+.titulo-secundario{
+  color: black;
+  grid-area: txt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.titulo-secundario h2{
+  font-size: 100px;
+}
+
+/*contenedores de video*/
+
+.contenedor2{
+  
+  grid-area: vid;
+  display: flex;
+ 
+}
+
+.contenedor2-vid1{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.contenedor2-vid2{
+  
+  width: 100%;
+  height: 100%p;
+  object-fit: cover;
+  }
+/*boton ver mas*/
+  .contenedor2 .boton {
+    display: flex;
+    position: relative;
+    align-self:center;
+  }
+
+
+  /*footer desktop*/
+  footer{
+  padding: 20px;
+  
+}
+footer h2,.redes{
+  margin: 20px;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+}
+
+
+/*fw2023 desktop*/
+.contenedorfw{
+  width: 1fr;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  text-align: center;
+  font-family: raleway;
+  margin:10px;
+  margin-top: 150px;
+}
+.ventas img{
+  width: 80%;
+  height: auto;
+}
+.ventas div a {
+  
+  font-family: raleway;
+  border: solid 2px black;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  padding: 5px;
+  
+}
+
+/*galeria desktop*/
+.carrusel{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.carrusel-gal,.imagen1,.imagen2, .imagen3{
+  width: 50%;
+  height: auto;
+}
+
+/* estilos nosotrosdesktop*/
+.contenedor-nosotros{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: .5fr 1fr;
+
+}
+.contenedor-nosotros__ubic{
+  
+  font-family:raleway ;
+  margin-top: 200px;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  
+  
+}
+.contenedor-nosotros__tienda1{
+  grid-column: 1/2 ;
+
+}
+
+.contenedor-nosotros__horario{
+  display: flex;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 200px;
+  justify-content: center;
+}
+
+.contenedor-nosotros__datos{
+  font-family: raleway;
+  font-size: 25px;
+  margin: 20px;
+}
+
+/*nosotros style desktop*/
+.nos-contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.nos-contenedor__qs{
+  display: flex;
+  position: absolute;
+  font-family: raleway ;
+  font-size: 50px;
+  top: 200px ;
+}
+
+}
+.nos-contenedor__transparencia{
+  background-color: rgba(0, 0, 0, 0.39);
+  position: absolute;
+  top: 300px;
+}
+
+.nos-contenedor__transparencia .nos-contenedor__text{
+  color: white;
+  font-size: 30px;
+  font-family: lato;
+  padding: 20px;
+}
